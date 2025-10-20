@@ -1,4 +1,4 @@
-using MicrosoFt.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace artificial_assistance_api.Controllers
 {
@@ -7,28 +7,28 @@ namespace artificial_assistance_api.Controllers
     public class ConversationsController : ControllerBase
     {
         private readonly ILogger<ConversationsController> logger;
-        public ConversationsController()
+        public ConversationsController(ILogger<ConversationsController> logger)
         {
             this.logger = logger;
         }
 
-        [HttpGet(Name = "Conversation")]
-        public IEnumerable<string> List()
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> List()
         {
-            return [""];
+            var retorno = new List<string>();
+            return retorno;
         }
 
-        [HttpGet(Name = "Conversation/$id")]
-        public string Get(int id)
-        {
-            return "";
-        }
-
-        [HttpPost(Name = "Conversation")]
-        public string Post()
+        [HttpGet("{id}")]
+        public ActionResult<string> Get(int id)
         {
             return "";
         }
 
+        [HttpPost]
+        public ActionResult<string> Post()
+        {
+            return "";
+        }
     }
 }
