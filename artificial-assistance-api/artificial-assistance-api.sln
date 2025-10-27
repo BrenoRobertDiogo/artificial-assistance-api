@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "artificial-assistance-api", "artificial-assistance-api\artificial-assistance-api.csproj", "{D279564F-2284-4938-9306-322AD6183C54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "artificial-assistance-api\API.csproj", "{D279564F-2284-4938-9306-322AD6183C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "artificial-assistance-service", "artificial-assistance-service\artificial-assistance-service.csproj", "{9D0F5886-CADF-4C32-A2B8-25E7CC815288}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "artificial-assistance-service\Service.csproj", "{9D0F5886-CADF-4C32-A2B8-25E7CC815288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "artificial-assistance-ioc\IoC.csproj", "{8DC9CD4F-B36A-4BDD-8D62-E5377DA13ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "artificial-assistance-domain\Domain.csproj", "{0D340586-6D37-4F05-B8C2-CD305E028413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{8BC0C4D2-4B2F-4365-A93C-A77F38B0BC7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +27,23 @@ Global
 		{9D0F5886-CADF-4C32-A2B8-25E7CC815288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D0F5886-CADF-4C32-A2B8-25E7CC815288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D0F5886-CADF-4C32-A2B8-25E7CC815288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC9CD4F-B36A-4BDD-8D62-E5377DA13ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC9CD4F-B36A-4BDD-8D62-E5377DA13ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC9CD4F-B36A-4BDD-8D62-E5377DA13ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC9CD4F-B36A-4BDD-8D62-E5377DA13ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D340586-6D37-4F05-B8C2-CD305E028413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D340586-6D37-4F05-B8C2-CD305E028413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D340586-6D37-4F05-B8C2-CD305E028413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D340586-6D37-4F05-B8C2-CD305E028413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC0C4D2-4B2F-4365-A93C-A77F38B0BC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC0C4D2-4B2F-4365-A93C-A77F38B0BC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC0C4D2-4B2F-4365-A93C-A77F38B0BC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC0C4D2-4B2F-4365-A93C-A77F38B0BC7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AA54E6C-719C-440A-821C-0C158BD75663}
 	EndGlobalSection
 EndGlobal
